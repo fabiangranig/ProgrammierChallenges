@@ -1,0 +1,96 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Fabian_G_Library/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Fabian_G_Library.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Fabian_G_Library.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Fabian_G_Library/1.0.1": {
+      "sha512": "KB0hAiSgJrOy/vznpR2Y8c1xoeH6udsL1cz20l7L24hSDKs5eMFCVozUA99pyfFVr7IxXrpMZZIx1n7dqtO7bA==",
+      "type": "package",
+      "path": "fabian_g_library/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        "fabian_g_library.1.0.1.nupkg.sha512",
+        "fabian_g_library.nuspec",
+        "lib/netstandard2.0/Fabian_G_Library.dll"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Fabian_G_Library >= 1.0.1"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\fabex\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\fabex\\Documents\\GitHub\\ProgrammierChallenges\\Library\\Library_Testing\\Library_Testing.csproj",
+      "projectName": "Library_Testing",
+      "projectPath": "C:\\Users\\fabex\\Documents\\GitHub\\ProgrammierChallenges\\Library\\Library_Testing\\Library_Testing.csproj",
+      "packagesPath": "C:\\Users\\fabex\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\fabex\\Documents\\GitHub\\ProgrammierChallenges\\Library\\Library_Testing\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\fabex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\fabex\\Documents\\GitHub\\ProgrammierChallenges\\Library\\Library_Output": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "dependencies": {
+          "Fabian_G_Library": {
+            "target": "Package",
+            "version": "[1.0.1, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

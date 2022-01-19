@@ -1,0 +1,9 @@
+C:\Users\fabex\Documents\GitHub\ProgrammierChallenges\Library\Library_Output\netstandard2.0\Fabian_G_Library.deps.json
+C:\Users\fabex\Documents\GitHub\ProgrammierChallenges\Library\Library_Output\netstandard2.0\Fabian_G_Library.dll
+C:\Users\fabex\Documents\GitHub\ProgrammierChallenges\Library\Library_Output\netstandard2.0\Fabian_G_Library.pdb
+C:\Users\fabex\Documents\GitHub\ProgrammierChallenges\Library\Fabian_G_Library\obj\Debug\netstandard2.0\Fabian_G_Library.AssemblyInfoInputs.cache
+C:\Users\fabex\Documents\GitHub\ProgrammierChallenges\Library\Fabian_G_Library\obj\Debug\netstandard2.0\Fabian_G_Library.AssemblyInfo.cs
+C:\Users\fabex\Documents\GitHub\ProgrammierChallenges\Library\Fabian_G_Library\obj\Debug\netstandard2.0\Fabian_G_Library.csproj.CoreCompileInputs.cache
+C:\Users\fabex\Documents\GitHub\ProgrammierChallenges\Library\Fabian_G_Library\obj\Debug\netstandard2.0\Fabian_G_Library.dll
+C:\Users\fabex\Documents\GitHub\ProgrammierChallenges\Library\Fabian_G_Library\obj\Debug\netstandard2.0\Fabian_G_Library.pdb
+C:\Users\fabex\Documents\GitHub\ProgrammierChallenges\Library\Fabian_G_Library\obj\Debug\netstandard2.0\Fabian_G_Library.csprojAssemblyReference.cache
