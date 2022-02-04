@@ -26,6 +26,11 @@
 Tutorial (done)
 ```
 
+##Kaddis
+```
+6.Tasks done
+```
+
 ## CodePirate App
 **Python**
 ```
