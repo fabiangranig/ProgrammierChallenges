@@ -1,8 +1,0 @@
-{
-  "runtimeOptions": {
-    "additionalProbingPaths": [
-      "C:\\Users\\fabex\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\fabex\\.nuget\\packages"
-    ]
-  }
-}
