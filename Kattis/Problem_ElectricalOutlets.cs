@@ -8,27 +8,27 @@ public class Program
 	int n_lines = Convert.ToInt32(Console.ReadLine());
 
 	//Get the rest of the lines
-	string[] input = new String[n_lines];
 	for(int i = 0; i < n_lines; i++)
 	{
 		//Put the lines into the array
-		input[i] = Convert.ToString(Console.ReadLine());
-	}
+		string input = Convert.ToString(Console.ReadLine());
 
-	//Split the lines into single values
-	string[] array = input.Split(" ");
+		//Get the splittet String
+		string[] split = input.Split(" ");
 
-	//Convert the whole array into integers
-	int[] numbers = new Int32[array.Length];
-	for(int i = 0; i < array.Length; i++)
-	{
-		//Convert to Int
-		numbers[i] = Parse.Int32(array[i]);
-	}
+		//Go through the outlets
+		int sum = 0;
+		for(int u = 1; u < split.Length; u++)
+		{
+			//Add the numbers togheter
+			sum += Int32.Parse(split[u]);
+		}
 
-	for(int i = 0; i < numbers.Length; i++)
-	{
-		
+		//Remove the outlets which are to much
+		sum -= split.Length - 2;
+
+		//Display the solution
+		Console.WriteLine(sum);
 	}
     }
 }
