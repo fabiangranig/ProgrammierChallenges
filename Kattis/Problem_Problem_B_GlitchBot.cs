@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 public class Program
 {   
@@ -13,7 +14,7 @@ public class Program
         d[3] = "Left";
 
         //Find the number to the position
-        int n;
+        int n = 0;
         for(int i = 0; i < d.Length; i++)
         {
             //Get the number
@@ -43,27 +44,25 @@ public class Program
     //function to move forward
     static int[] Move_Forward(string dir, int pos_x, int pos_y)
     {
-        if("Forward" == array[m])
+        if(dir == "Up")
         {
-            if(dir == "Up")
-            {
-                pos_y++;
-            }
+            pos_y++;
+        }
 
-            if(dir == "Down")
-            {
-                pos_y--;
-            }
+        if(dir == "Down")
+        {
+            pos_y--;
+        }
                 
-            if(dir == "Right")
-            {
-                pos_x++;
-            }
+        if(dir == "Right")
+        {
+            pos_x++;
+        }
                 
-            if(dir == "Left")
-            {
-                pos_x--;
-            }
+        if(dir == "Left")
+        {
+            pos_x--;
+        }
 
         //Put the pos into an array
         int[] array2 = new Int32[2];
@@ -75,7 +74,7 @@ public class Program
     }
 
     //function to check if movement is correct
-    public static int[] Movements(string[] array, int res_x, int res_y)
+    static int[] Movements(string[] array)
     {
         //Create variables in for-loop
         string dir  = "Up";
@@ -110,18 +109,14 @@ public class Program
             if("Right" == array[i])
             {
                 dir = Facing(dir, 1);
-                int[] b = Move_Forward(dir, pos_x, pos_y);
-                pos_x = b[0];
-                pos_y = b[1];
             }
 
             if("Left" == array[i])
             {
                 dir = Facing(dir, -1);
-                int[] b = Move_Forward(dir, pos_x, pos_y);
-                pos_x = b[0];
-                pos_y = b[1];
             }
+
+            Console.WriteLine("X: " + pos_x + " " + "Y: " + pos_y + " Facing: " + dir + " Command: " + array[i]);
         }
 
         //Return the solution
@@ -134,7 +129,7 @@ public class Program
     public static void Main()
     {
         //Get the result of the point
-        string res = Convert.ToString(Console.WriteLine());
+        string res = Convert.ToString(Console.ReadLine());
         string[] res2 = res.Split(" ");
         int res_x = Int32.Parse(res2[0]);
         int res_y = Int32.Parse(res2[1]);
@@ -150,8 +145,41 @@ public class Program
             array[i] = Convert.ToString(Console.ReadLine());
         }
 
-        //Display the cordinates
-        int[] v = Movements(array, 1, 1);
-        Console.WriteLine(v[0] + " " + v[1]); 
+        //Go through the directions and alway remove one
+        string[] moves2 = array;
+        for(int i = 0; i < moves; i++)
+        {
+            for(int u = 0; u < 4; u++)
+            {
+                Console.WriteLine("Phase: " + i + " Modus: " + u);
+                //Change that position
+                if(u == 0)
+                {
+                    moves2[i] = "Forward";
+                }
+                if(u == 1)
+                {
+                    moves2[i] = "Right";
+                }
+                if(u == 2)
+                {
+                    moves2[i] = "Down";
+                }
+                if(u == 3)
+                {
+                    moves2[i] = "Left";
+                }
+                
+                //Check if this array gives the right solution
+                int[] c = Movements(moves2);
+                Console.WriteLine(c[0] + " " + c[1]);
+                if(c[0] == res_x && c[1] == res_y)
+                {
+                    Console.WriteLine("Found!");   
+                }
+    
+                moves2[i] = array[i];
+            }
+        }
     }
 }
