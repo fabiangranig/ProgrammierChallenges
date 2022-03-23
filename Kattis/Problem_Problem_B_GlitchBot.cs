@@ -115,8 +115,6 @@ public class Program
             {
                 dir = Facing(dir, -1);
             }
-
-            Console.WriteLine("X: " + pos_x + " " + "Y: " + pos_y + " Facing: " + dir + " Command: " + array[i]);
         }
 
         //Return the solution
@@ -147,14 +145,18 @@ public class Program
 
         //Go through the directions and alway remove one
         string[] moves2 = array;
+        int number = -1;
+        string lm = "";
+        bool switcher = false;
         for(int i = 0; i < moves; i++)
         {
+            string ur = "";
             for(int u = 0; u < 4; u++)
             {
-                Console.WriteLine("Phase: " + i + " Modus: " + u);
                 //Change that position
                 if(u == 0)
                 {
+                    ur = moves2[i];
                     moves2[i] = "Forward";
                 }
                 if(u == 1)
@@ -172,14 +174,24 @@ public class Program
                 
                 //Check if this array gives the right solution
                 int[] c = Movements(moves2);
-                Console.WriteLine(c[0] + " " + c[1]);
                 if(c[0] == res_x && c[1] == res_y)
                 {
-                    Console.WriteLine("Found!");   
+                    if(switcher == false)
+                    {
+                        number = i + 1;
+                        lm = moves2[i];
+                        switcher = true;
+                    }
                 }
-    
-                moves2[i] = array[i];
+
+                if(u == 3)
+                {
+                    moves2[i] = ur;
+                }
             }
         }
+
+        //Output the solution
+        Console.WriteLine(number + " " + lm);
     }
 }
