@@ -161,11 +161,11 @@ public class Program
                 }
                 if(u == 1)
                 {
-                    moves2[i] = "Right";
+                    moves2[i] = "Left";
                 }
                 if(u == 2)
                 {
-                    moves2[i] = "Down";
+                    moves2[i] = "Right";
                 }
                 if(u == 3)
                 {
@@ -192,6 +192,13 @@ public class Program
         }
 
         //Output the solution
-        Console.WriteLine(number + " " + lm);
+        if(switcher == true)
+        {
+            Console.WriteLine(number + " " + lm);
+        }
+        else
+        {
+            
+        }
     }
 }
