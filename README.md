@@ -28,7 +28,7 @@ Tutorial (done)
 
 ## Kaddis
 ```
-69.Tasks done
+70.Tasks done
 ```
 
 ## CodePirate App
