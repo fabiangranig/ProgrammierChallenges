@@ -4,6 +4,9 @@ public class Program
 {
     public static void Main()
     {
-        Console.WriteLine("Hello World!");
+        //Get the input
+        int set_length = Int32.Parse(Convert.ToString(Console.ReadLine()));
+
+        //Get th
     }
 }
