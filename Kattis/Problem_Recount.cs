@@ -6,26 +6,51 @@ public class Program
     public static void Main()
     {
         //Get the name and sort them in
-        List<string> name = new List<string>();
-        List<int> number = new List<int>();
         string current_name = Convert.ToString(Console.ReadLine());
-        bool schalter;
-        while(current_name != ***)
+        Dictionary<string, int> hash = new Dictionary<string, int>();
+        while(current_name != "***")
         {
-            //Schalter always on false on start
-            schalter = false;
-
-            //Check if there is already a value
-            for(int i = 0; i < name.Count; i++)
+            //Check if the value exits
+            if(hash.ContainsKey(current_name))
             {
-                if(name[i] == current_name)
-                {
-                    
-                }
+                hash[current_name]++;
             }
-            
+            else
+            {
+                hash.Add(current_name, 1);
+            }
+
             //Get the next name
             current_name = Convert.ToString(Console.ReadLine());
+        }
+        
+        //Go through and check for the highest values
+        int highest_number = -1;
+        string highest_index = "";
+        int count = 0;
+        foreach(KeyValuePair<string, int> pair in hash)
+        {
+            if(pair.Value == highest_number)
+            {
+                count++;
+            }
+
+            if(pair.Value > highest_number)
+            {
+                highest_number = pair.Value;
+                highest_index = pair.Key;
+                count = 1;
+            }
+        }
+
+        //Output
+        if(count > 1)
+        {
+            Console.WriteLine("Runoff!");
+        }
+        else
+        {
+            Console.WriteLine(highest_index);
         }
     }
 }
