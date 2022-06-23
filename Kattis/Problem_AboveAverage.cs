@@ -36,7 +36,7 @@ public class Program
             
             //Go through an check how many are above average
             int count = 0;
-            for(int u = 0; u < arr.Length; u++)
+            for(int u = 1; u < arr.Length; u++)
             {
                 if(average < arr[u])
                 {
@@ -45,10 +45,10 @@ public class Program
             }
 
             //Get the percent of how many
-            double sol = Convert.ToDouble(count) / arr[i] * 100;
+            double sol = Convert.ToDouble(count) / arr[0] * 100;
 
             //Output the solution
-            Console.WriteLine(Math.Round(sol, 3) + "%");
+            Console.WriteLine(string.Format("{0:f3}", sol) + "%");
         }
     }
 }
