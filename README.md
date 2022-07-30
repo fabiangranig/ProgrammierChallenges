@@ -26,7 +26,7 @@
 Tutorial (done)
 ```
 
-## Kaddis
+## Kattis
 ```
 96.Tasks done
 ```
