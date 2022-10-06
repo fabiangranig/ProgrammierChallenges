@@ -2,19 +2,13 @@ using System;
 
 public class Program
 {
-    static int PassThrough(int sum)
-    {
-        
-    }
-
     public static void Main()
     {
         //Get the the days each month
         int[] days_each_month = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
         //Get all days
-        string[] days = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
-        int starting_index = 3;
+        string[] days = {"Wednesday", "Thursday", "Friday", "Saturday", "Sunday", "Monday", "Tuesday"};
 
         //Get the input and split the input
         string input = Convert.ToString(Console.ReadLine());
@@ -32,6 +26,8 @@ public class Program
         //Add the days of this month
         sum += day;
         
-        
+        //Output the solution
+        int sol = sum % 7;
+        Console.WriteLine(days[sol]);
     }
 }
