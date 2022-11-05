@@ -23,7 +23,7 @@
 
 ## Kattis
 ```
-106.Tasks done
+107.Tasks done
 ```
 
 ## Leetcode
