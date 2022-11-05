@@ -28,7 +28,7 @@ Tutorial (done)
 
 ## Kattis
 ```
-106.Tasks done
+107.Tasks done
 ```
 
 ## CodePirate App
