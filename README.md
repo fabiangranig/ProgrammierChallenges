@@ -21,25 +21,9 @@
 1. - 4. Task (done)
 ```
 
-**Keylogger**
-```
-Tutorial (done)
-```
-
 ## Kattis
 ```
 111.Tasks done
-```
-
-## CodePirate App
-**Python**
-```
-Codepirate App (done)
-```
-
-**Swift**
-```
-Codepirate App (done)
 ```
 
 ## Leetcode
