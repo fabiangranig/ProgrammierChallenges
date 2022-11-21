@@ -1,0 +1,47 @@
+﻿using System;
+using System.Collections.Generic;
+
+//Part1
+//Answer 1 - 3152409 - wrong
+
+namespace Template_Datei
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Get all lines and also convert to int
+            List<int> input = new List<int>();
+            int current_run = Int32.Parse(Convert.ToString(Console.ReadLine()));
+            while(current_run != -1)
+            {
+                input.Add(current_run);
+                current_run = Int32.Parse(Convert.ToString(Console.ReadLine()));
+            }
+
+            //Get the first Part
+            Console.WriteLine("Solution of the first part is: " + Part1(input));
+        }
+
+        static int Part1(List<int> input)
+        {
+            //Get the sum which is needed
+            double sum = 0;
+            
+            //Calculate the solution
+            for(int i = 0; i < input.Count; i++)
+            {
+                sum += Math.Floor(input[i] / 3.0 - 2);
+            }
+
+            //Return the solution
+            return Convert.ToInt32(sum);
+        }
+
+        static int Part2(List<int> input)
+        {
+            //Get the sum
+          
+        }
+    }
+}
