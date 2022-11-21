@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 //Part1
 //Answer 1 - 3152409 - wrong
+//Answer 2 - 3152375 - right
 
 namespace Template_Datei
 {
@@ -21,6 +22,9 @@ namespace Template_Datei
 
             //Get the first Part
             Console.WriteLine("Solution of the first part is: " + Part1(input));
+
+            //Get the second Part
+            Console.WriteLine("Solution of the second part is: " + Part2(input));
         }
 
         static int Part1(List<int> input)
@@ -41,7 +45,24 @@ namespace Template_Datei
         static int Part2(List<int> input)
         {
             //Get the sum
-          
+            double sum = 0;
+
+            //Go through with for-loop
+            for(int i = 0; i < input.Count; i++)
+            {
+                //Get the current value
+                double c_value = input[i];
+
+                //Process the next value
+                while(c_value / 3 - 2 > 0)
+                {
+                    c_value = Math.Floor(c_value / 3.0) - 2;
+                    sum += c_value;
+                }
+            }
+
+            //Return the solution
+            return Convert.ToInt32(sum);
         }
     }
 }
