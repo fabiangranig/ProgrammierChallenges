@@ -5,6 +5,9 @@ using System.Collections.Generic;
 //Answer 1 - 3152409 - wrong
 //Answer 2 - 3152375 - right
 
+//Part 2
+//Answer 1 - 4725720 - right
+
 namespace Template_Datei
 {
     class Program
