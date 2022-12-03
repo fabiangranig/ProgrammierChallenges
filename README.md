@@ -18,6 +18,10 @@
 8.day Part 1 (done)
 8.day Part 2 (not done)
 ```
+**AdventofCode2022**
+```
+1. - 3. day (done)
+```
 
 ## Algorithmen verstehen
 **Adventskalender 2021**
