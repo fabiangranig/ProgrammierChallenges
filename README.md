@@ -20,7 +20,7 @@
 ```
 **AdventofCode2022**
 ```
-1. - 3. day (done)
+1. - 4. day (done)
 ```
 
 ## Algorithmen verstehen
