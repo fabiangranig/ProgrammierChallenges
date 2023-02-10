@@ -58,7 +58,7 @@ namespace FG
         public static int BitAtPosition(int number, int position)
         {
             //Die Nummer finden um zu vergleichen
-            int number_temp = Convert.ToInt32(Math.Pow(2, position));
+            int number_temp = MathPowInt(2, position);
 
             //Die beiden mit und verbinden
             int sol = number & number_temp;
@@ -71,6 +71,21 @@ namespace FG
 
             //Wenn es nicht vorkommt
             return 0;
+        }
+
+        public static int MathPowInt(int a1, int a2)
+        {
+            if(a2 == 0)
+            {
+                return 1;
+            }
+
+            int sol = a1;
+            for(int i = 1; i < a2; i++)
+            {
+                sol *= a1;
+            }
+            return sol;
         }
     }
 }
