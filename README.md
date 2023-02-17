@@ -31,8 +31,8 @@
 
 ## Kattis
 ```
-119.Tasks done
-1.Challenge done
+121.Tasks done
+2.Challenge done
 ```
 
 ## Leetcode
