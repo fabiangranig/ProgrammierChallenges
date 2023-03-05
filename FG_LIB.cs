@@ -6,6 +6,7 @@ namespace FG
     //-string SwitchDotandComa(string input, char charactertochangeinto)
     //-bool NoRepeatedLetter(string input)
     //-int BitAtPosition(int number, int position)
+    //-string[] SimpleSymmetricSort(string[] arr)
     public class Lib1
     {
         public static string SwitchDotandComa(string input, char charactertochange)
@@ -86,6 +87,32 @@ namespace FG
                 sol *= a1;
             }
             return sol;
+        }
+
+        public static string[] SimpleSymmetricSort(string[] arr)
+        {
+            string[] new_arr = new String[arr.Length];
+            int count = 1;
+            int NextFreeSlot_Top = 0;
+            int NextFreeSlot_Bottom = arr.Length - 1;
+            for(int i = 0; i < arr.Length; i++)
+            {
+                if(count % 2 == 1)
+                {
+                    new_arr[NextFreeSlot_Top] = arr[i];
+                    NextFreeSlot_Top++;
+                    count++;
+                }
+                else if(count % 2 == 0)
+                {
+                    new_arr[NextFreeSlot_Bottom] = arr[i];
+                    NextFreeSlot_Bottom--;
+                    count++;
+                }
+            }
+
+            //Return the list
+            return new_arr;
         }
     }
 }
