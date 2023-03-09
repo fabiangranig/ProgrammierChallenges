@@ -7,6 +7,7 @@ namespace FG
     //-bool NoRepeatedLetter(string input)
     //-int BitAtPosition(int number, int position)
     //-string[] SimpleSymmetricSort(string[] arr)
+    //-int CharToInt(char input)
     public class Lib1
     {
         public static string SwitchDotandComa(string input, char charactertochange)
@@ -113,6 +114,11 @@ namespace FG
 
             //Return the list
             return new_arr;
+        }
+
+        public static int CharToInt(char input)
+        {
+            return Int32.Parse(Convert.ToString(input));
         }
     }
 }
