@@ -1,0 +1,11 @@
+C:\Users\fg\Downloads\CrackPasswortCard\bin\Debug\CrackPasswortCard.exe.config
+C:\Users\fg\Downloads\CrackPasswortCard\bin\Debug\CrackPasswortCard.exe
+C:\Users\fg\Downloads\CrackPasswortCard\bin\Debug\CrackPasswortCard.pdb
+C:\Users\fg\Downloads\CrackPasswortCard\bin\Debug\DotNetZip.dll
+C:\Users\fg\Downloads\CrackPasswortCard\bin\Debug\DotNetZip.pdb
+C:\Users\fg\Downloads\CrackPasswortCard\bin\Debug\DotNetZip.xml
+C:\Users\fg\Downloads\CrackPasswortCard\obj\Debug\CrackPasswortCard.csproj.AssemblyReference.cache
+C:\Users\fg\Downloads\CrackPasswortCard\obj\Debug\CrackPasswortCard.csproj.CoreCompileInputs.cache
+C:\Users\fg\Downloads\CrackPasswortCard\obj\Debug\CrackPasswortCard.csproj.CopyComplete
+C:\Users\fg\Downloads\CrackPasswortCard\obj\Debug\CrackPasswortCard.exe
+C:\Users\fg\Downloads\CrackPasswortCard\obj\Debug\CrackPasswortCard.pdb
