@@ -1,0 +1,50 @@
+var input=input;
+parts=input.split("\n")
+var current_position = 50;
+var counter = 0;
+for(let i = 0; i < parts.length; i++)
+{
+    if(parts[i][0]=='R')
+    {
+        current_position = Right(current_position,parseInt(parts[i].split('R')[1]));
+    }
+    if(parts[i][0]=='L')
+    {
+         current_position = Left(current_position,parseInt(parts[i].split('L')[1]));
+    }
+}
+console.log(counter);
+
+function Left(cpos, move)
+{
+    for(var i = 0; i < move; i++)
+    {
+        cpos--;
+        if(cpos==-1)
+        {
+            cpos = 99;
+        }
+        if(cpos == 0)
+        {
+            counter++;
+        }
+    }
+    return cpos;
+}
+
+function Right(cpos, move)
+{
+    for(var i = 0; i < move; i++)
+    {
+        cpos++;
+        if(cpos==100)
+        {
+            cpos = 0;
+        }
+        if(cpos == 0)
+        {
+            counter++;
+        }
+    }
+    return cpos;
+}

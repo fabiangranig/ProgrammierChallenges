@@ -1,0 +1,29 @@
+input=input
+entry=input.split(',');
+solution = 0;
+for(var i = 0; i < entry.length; i++)
+{
+    parts = entry[i].split('-');
+    for(var u = parseInt(parts[0]); u < parseInt(parts[1]) + 1; u++)
+    {
+        solution += GetPatterns(u);
+    }
+}
+
+function GetPatterns(line_int) {
+    line = String(line_int);
+    var inv = true;
+    for(var i = 0; i < line.length / 2; i++)
+    {
+        //console.log(line[i]);
+        //console.log(line[line.length / 2]);
+        if(line[i] =! line[line.length / 2])
+        {
+            inv = false;
+        }
+    }
+    if(inv == true)
+    {
+        console.log(line);
+    }
+}
